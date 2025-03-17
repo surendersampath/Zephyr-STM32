@@ -78,21 +78,6 @@
             }
           },
           "launchTarget": "st link debugger"
-        },
-        "build\\dev_h723zg": {
-          "relBoardDir": "boards",
-          "board": "dev_h723zg",
-          "relBoardSubDir": "arm\\dev_h723zg",
-          "name": "build\\dev_h723zg",
-          "westBuildArgs": "",
-          "westBuildCMakeArgs": " -DCONFIG_NO_OPTIMIZATIONS=y",
-          "confFiles": {
-            "config": [],
-            "extraConfig": [],
-            "overlay": [],
-            "extraOverlay": []
-          },
-          "runnerConfigs": {}
         }
       },
       "confFiles": {
