@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "st link debugger",
+            "cwd": "${workspaceFolder}",
+            "executable": "C:/Users/ssampath/Desktop/Zephyr-Training/DHCP_CLIENT/build/nucleo_h723zg/zephyr/zephyr.hex",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "stlink",
+            "device": "STM32H723ZG",
+            "interface": "swd",
+            "svdFile": "C:/Program Files/STMicroelectronics/STM32Cube/STM32CubeProgrammer/SVD/STM32H723.svd"
+        }
+    ]
+}

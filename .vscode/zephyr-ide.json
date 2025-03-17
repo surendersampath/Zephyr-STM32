@@ -1,3 +1,106 @@
 {
-  "projects": {}
+  "projects": {
+    "blinky": {
+      "rel_path": "blinky",
+      "name": "blinky",
+      "buildConfigs": {
+        "build\\esp32s3_devkitc\\esp32s3\\procpu": {
+          "board": "esp32s3_devkitc/esp32s3/procpu",
+          "relBoardSubDir": "espressif\\esp32s3_devkitc",
+          "name": "build\\esp32s3_devkitc\\esp32s3\\procpu",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_DEBUG_OPTIMIZATIONS=y -DCONFIG_DEBUG_THREAD_INFO=y ",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": [
+              "blinky\\esp32s3_devkitc.overlay"
+            ]
+          },
+          "runnerConfigs": {
+            "esp32": {
+              "runner": "esp32",
+              "name": "esp32",
+              "args": ""
+            }
+          }
+        },
+        "build\\nucleo_h723zg": {
+          "board": "nucleo_h723zg",
+          "relBoardSubDir": "st\\nucleo_h723zg",
+          "name": "build\\nucleo_h723zg",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_NO_OPTIMIZATIONS=y",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {
+            "stm32cubeprogrammer": {
+              "runner": "stm32cubeprogrammer",
+              "name": "stm32cubeprogrammer",
+              "args": ""
+            }
+          }
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    },
+    "DHCP_CLIENT": {
+      "rel_path": "DHCP_CLIENT",
+      "name": "DHCP_CLIENT",
+      "buildConfigs": {
+        "build\\nucleo_h723zg": {
+          "board": "nucleo_h723zg",
+          "relBoardSubDir": "st\\nucleo_h723zg",
+          "name": "build\\nucleo_h723zg",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_NO_OPTIMIZATIONS=y",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {
+            "stm32cubeprogrammer": {
+              "runner": "stm32cubeprogrammer",
+              "name": "stm32cubeprogrammer",
+              "args": ""
+            }
+          },
+          "launchTarget": "st link debugger"
+        },
+        "build\\dev_h723zg": {
+          "relBoardDir": "boards",
+          "board": "dev_h723zg",
+          "relBoardSubDir": "arm\\dev_h723zg",
+          "name": "build\\dev_h723zg",
+          "westBuildArgs": "",
+          "westBuildCMakeArgs": " -DCONFIG_NO_OPTIMIZATIONS=y",
+          "confFiles": {
+            "config": [],
+            "extraConfig": [],
+            "overlay": [],
+            "extraOverlay": []
+          },
+          "runnerConfigs": {}
+        }
+      },
+      "confFiles": {
+        "config": [],
+        "extraConfig": [],
+        "overlay": [],
+        "extraOverlay": []
+      }
+    }
+  }
 }

@@ -3,5 +3,8 @@
     "C_Cpp.default.compileCommands": "${workspaceFolder}\\.vscode\\compile_commands.json",
     "cmake.configureOnOpen": false,
     "zephyr-ide.use-zephyr-ide-json": true,
-    "zephyr-ide.projects": null
+    "zephyr-ide.projects": null,
+    "clangd.arguments": [],
+    "devicetree.zephyr": "${workspaceFolder}\\external\\zephyr",
+    "kconfig.zephyr.base": "${workspaceFolder}\\external\\zephyr"
 }

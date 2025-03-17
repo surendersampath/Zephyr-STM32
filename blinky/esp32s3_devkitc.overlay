@@ -1,0 +1,14 @@
+/ {
+    /* Create a parent node that is compatible with gpio-leds */
+    leds {
+        compatible = "gpio-leds";
+        led0: led_0 {
+            gpios = <&gpio0 48 GPIO_ACTIVE_HIGH>;  /* LED is on GPIO 48 */
+            label = "User LED 0";
+        };
+    };
+
+    aliases {
+        led0 = &led0;
+    };
+};
